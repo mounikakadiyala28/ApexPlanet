@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 2 App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Web Task</h1>
+    <div class="nav-buttons">
+      <button onclick="showSection('contact')">Contact Form</button>
+      <button onclick="showSection('todo')">To-Do List</button>
+    </div>
+  </header>
+
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section id="contactSection" class="hidden">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formError" class="error"></p>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todoSection" class="hidden">
+      <h2>To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="New Task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Task-2 Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

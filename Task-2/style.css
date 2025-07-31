@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #0077cc;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .nav-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .nav-buttons button {
+    padding: 0.7rem 1.5rem;
+    background-color: #005fa3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #004080;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 0.7rem 1.5rem;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #005fa3;
+  }
+  
+  .todo-input {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .todo-input input {
+    flex: 1;
+    padding: 0.6rem;
+  }
+  
+  .todo-input button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-input button:hover {
+    background: #218838;
+  }
+  
+  #taskList {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  
+  #taskList li {
+    background: #f8f9fa;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    border-left: 5px solid #0077cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #taskList li button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #taskList li button:hover {
+    background: #c82333;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e9ecef;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
