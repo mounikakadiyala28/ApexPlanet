@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling & JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>✨ Advanced Styling & JavaScript ✨</h1>
+      <p>Responsive Design | Quiz | Carousel | API Fetch</p>
+    </header>
+
+    <section class="responsive-box">
+      <p>This section adapts to mobile, tablet, and desktop screen sizes using media queries.</p>
+    </section>
+
+    <section class="button-group">
+      <button id="btn-quiz">Show Quiz</button>
+      <button id="btn-carousel">Show Carousel</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-container" class="hidden card">
+      <h2>🧠 Quick Quiz</h2>
+      <p id="question">Click next to begin the quiz!</p>
+      <button id="btn-next-question">Next Question</button>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel-container" class="hidden card">
+      <h2>🖼️ Image Carousel</h2>
+      <img id="carousel-image" src="" alt="carousel image" />
+      <button id="btn-next-image">Next Image</button>
+    </section>
+
+    <!-- Joke Section -->
+    <section class="api-section card">
+      <h2>😂 Joke of the Moment</h2>
+      <button id="btn-joke">Get Joke</button>
+      <p id="joke-text">Click the button to fetch a random joke.</p>
+    </section>
+
+  </div>
+
+  <!-- JavaScript loaded after body -->
+  <script src="script.js"></script>
+</body>
+</html>
