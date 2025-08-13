@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #008080, #20b2aa);
+    padding: 15px;
+    text-align: center;
+}
+header nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.btn {
+    background: #008080;
+    color: white;
+    padding: 14px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #20b2aa;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Form */
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    background: #008080;
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background: #20b2aa;
+}
+
+/* To-Do list */
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+#taskList li {
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#taskList li:hover {
+    background: #ffcccc;
+}
+/* To-Do App Container */
+.todo-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Input & Button Styling */
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.todo-input button {
+    background: #008080;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.todo-input button:hover {
+    background: #20b2aa;
+}
+
+/* Task List */
+#taskList li {
+    background: #f8f8f8;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    text-align: left;
+    transition: background 0.3s;
+}
+#taskList li:hover {
+    background: #ffcccc;
+}
